@@ -4,18 +4,19 @@ const prisma = new PrismaClient();
 async function main() {
 	await prisma.user.create({
 		data: {
-			email: 'sathish.ssp@skitter.in',
-			firstname: 'Sathish',
-			fullname: 'Sathish Sankar',
-			lastname: 'Sankar',
+			email: 'tamil.s@skitter.in',
+			firstname: 'Tamil',
+			fullname: 'Muthamilarasi',
+            lastname: 'S',
+            mobile : "9789904680",
 			Post: {
 				create: {
-					title: 'Sample'
+					title: 'Arasi'
 				}
 			},
 			Profile: {
 				create: {
-					bio: 'Sample'
+					bio: 'muthamilarasi'
 				}
 			}
 		}

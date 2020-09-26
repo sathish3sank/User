@@ -27,11 +27,12 @@ model Profile {
 }
 
 model User {
-  id      Int      @default(autoincrement()) @id
-  email   String   @unique
-  firstname    String @default("null")
-  lastname String @default("null")
-  fullname String @default("null")
-  Post    Post[]
-  Profile Profile?
+  id        Int      @default(autoincrement()) @id
+  email     String   @unique
+  firstname String   @default("null")
+  lastname  String   @default("null")
+  fullname  String   @default("null")
+  mobile    String?  @unique
+  Post      Post[]
+  Profile   Profile?
 }
